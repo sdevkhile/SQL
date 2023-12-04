@@ -1,0 +1,17 @@
+[[MSSQL]] 
+/ -- There is table say Employee which has columns EmpID, Name , Age, Salary. If you want to create a new table say ABCD with same table structure as employee below is code --/
+
+SELECT * INTO ABCD 
+  FROM EMPLOYEE
+    WHERE 1=0;
+
+/ -- Condition 1=0 will ensure only the structure is getting copied --/
+/ -- To copy the contents as well of table Employee to the table ABCD below is the code --/
+
+INSERT INTO ABCD
+  SELECT * FROM EMPLOYEE
+
+
+
+
+
